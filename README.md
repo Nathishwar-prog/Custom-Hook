@@ -1,16 +1,47 @@
-# React + Vite
+This project demonstrates how to create a custom React Hook called useFetch that simplifies fetching data from any API.
+It helps handle loading, error, and data states in a clean and reusable way.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The project also includes a simple UI that displays product data fetched from a dummy API endpoint.
 
-Currently, two official plugins are available:
+# Objectives
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Understand and implement custom hooks in React.
 
-## React Compiler
+Simplify the process of fetching data using fetch().
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Manage states like loading, error, and data efficiently.
 
-## Expanding the ESLint configuration
+Build a clean and reusable structure for API calls.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Features
+
+1 Reusable useFetch hook
+2 Handles loading and error states
+3 Fetches and displays product data dynamically
+4 Uses useState, useEffect, and useCallback hooks
+5 Responsive and modern UI with basic styling
+6 Easily adaptable to any API endpoint
+
+# Design Decisions
+
+1 Custom Hook (useFetch):
+
+Keeps API logic separate from UI components.
+
+Can be reused in multiple parts of the app.
+
+2 Error Handling:
+
+Detects both network and server response errors.
+
+3 Loading Management:
+
+Displays a loading message while data is being fetched.
+
+4 Performance Optimization:
+
+I Used useCallback to avoid unnecessary re-renders.
+
+Flexibility:
+
+Works with any API URL by simply passing a new endpoint.
